@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🔢3 Lives Math Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-box">
+        <h1>3 Lives Math Challenge</h1>
+        <p class="description">
+            Answer the questions. Each wrong answer loses a life.  
+            Reach 10 points before you run out of lives!
+        </p>
+
+        <div class="status-bar">
+            <p>Score: <span id="score">0</span></p>
+            <p>Lives: <span id="lives">3</span></p>
+        </div>
+
+        <div id="question-area">
+            <p id="question-text">Click "Start Game" to begin.</p>
+        </div>
+
+        <input type="number" id="answer-input" placeholder="Type your answer" disabled>
+
+        <button id="check-button" onclick="checkAnswer()" disabled>Check Answer</button>
+
+        <p id="feedback"></p>
+
+        <button id="start-button" onclick="startGame()">Start Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
